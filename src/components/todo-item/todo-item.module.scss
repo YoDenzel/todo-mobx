@@ -1,0 +1,73 @@
+@import '../../shared/scss/fonts';
+
+.todo_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--honeydrew);
+  padding: 5px 10px 10px 20px;
+  position: relative;
+  height: fit-content;
+  justify-content: space-between;
+  word-break: break-all;
+
+  &:last-of-type {
+    border: none;
+  }
+}
+
+.left_part {
+  display: flex;
+  gap: 10px;
+  width: 75%;
+}
+
+.todo_card__title {
+  @include regular;
+  color: var(--honeydrew);
+  margin-left: 10px;
+}
+
+.checkbox_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox_input {
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+  padding: 3px;
+}
+
+.checkbox {
+  position: absolute;
+  left: 20px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--dark_blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right_part {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete_button {
+  @include caption;
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 12px;
+  margin-left: 10px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #a41414;
+  }
+}

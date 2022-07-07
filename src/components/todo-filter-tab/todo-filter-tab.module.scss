@@ -1,0 +1,19 @@
+@import '../../shared/scss/fonts';
+
+.filter_tab_container {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--honeydrew);
+}
+
+.filter_button {
+  border: none;
+  padding: 10px;
+  border-radius: 16px;
+  @include caption;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
