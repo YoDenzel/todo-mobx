@@ -1,51 +1,57 @@
 @import '../../shared/scss/fonts';
 
-@mixin box {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .todo_wrapper {
   background-color: var(--dark_blue);
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.create_todo_input {
-  padding: 15px;
+.create_todo_container {
+  display: flex;
   width: 70%;
+  position: relative;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.create_todo_input {
+  @include regular;
+  padding: 15px;
+  width: 100%;
   border-radius: 16px;
   border: 0;
   outline: none;
   display: flex;
-  margin-top: 100px;
+}
+
+.create_todo_button {
+  @include caption;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  border-bottom-right-radius: 16px;
+  border-top-right-radius: 16px;
+  border: none;
+  padding: 5px;
+  color: var(--blue);
+  background-color: var(--honeydrew);
+  cursor: pointer;
+  &:hover {
+    background-color: #e4ede1;
+  }
 }
 
 .todo_container {
-  width: 95%;
+  width: 70%;
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
-}
-
-.todo_card {
-  width: 31%;
-  height: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--red);
-  border-radius: 12px;
-}
-
-.todo_card__title {
-  @include regular;
-  color: var(--white);
+  gap: 5px;
+  max-height: 400px;
+  overflow-y: scroll;
+  background-color: var(--blue);
+  border-radius: 8px;
 }
