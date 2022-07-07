@@ -3,3 +3,5 @@ export type TTodoItem = {
   name: string;
   isDone: boolean;
 };
+
+export type TFilterButtons = 'Все' | 'Выполненные' | 'Невыполненные';
