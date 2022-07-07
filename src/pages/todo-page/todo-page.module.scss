@@ -22,9 +22,12 @@
   padding: 15px;
   width: 100%;
   border-radius: 16px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   border: 0;
   outline: none;
   display: flex;
+  margin-right: 70px;
 }
 
 .create_todo_button {
@@ -52,6 +55,7 @@
   gap: 5px;
   max-height: 400px;
   overflow-y: scroll;
+  overflow-x: unset;
   background-color: var(--blue);
   border-radius: 8px;
 }
