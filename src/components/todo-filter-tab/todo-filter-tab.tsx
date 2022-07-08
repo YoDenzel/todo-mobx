@@ -6,9 +6,15 @@ import { TFilterButtons } from '../../shared/types';
 export const TodoFilterTab = ({
   filterButtonClickhandler,
   activeFilter,
+  isTodos,
 }: TTodoFilterTab) => {
   return (
-    <div className={styles.filter_tab_container}>
+    <div
+      className={styles.filter_tab_container}
+      style={{
+        borderBottom: isTodos ? '1px solid #f1faee' : 'none',
+      }}
+    >
       {filterButtonTitles.map(item => (
         <button
           className={styles.filter_button}
