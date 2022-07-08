@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/todo-mobx/static/css/main.80610da0.css",
+    "main.css": "/todo-mobx/static/css/main.3653de58.css",
     "main.js": "/todo-mobx/static/js/main.5051563b.js",
     "index.html": "/todo-mobx/index.html",
-    "main.80610da0.css.map": "/todo-mobx/static/css/main.80610da0.css.map",
+    "main.3653de58.css.map": "/todo-mobx/static/css/main.3653de58.css.map",
     "main.5051563b.js.map": "/todo-mobx/static/js/main.5051563b.js.map"
   },
   "entrypoints": [
-    "static/css/main.80610da0.css",
+    "static/css/main.3653de58.css",
     "static/js/main.5051563b.js"
   ]
 }
