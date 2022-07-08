@@ -1,6 +1,6 @@
 {
   "name": "test-todo",
-"homepage": "https://yodenzel.github.io/",
+  "homepage": "https://yodenzel.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
