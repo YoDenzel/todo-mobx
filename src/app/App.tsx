@@ -4,7 +4,7 @@ import { TodoPage } from '../pages';
 function App() {
   return (
     <Routes>
-      <Route path="*" element={<TodoPage />} />
+      <Route path="/todo-mobx/*" element={<TodoPage />} />
     </Routes>
   );
 }

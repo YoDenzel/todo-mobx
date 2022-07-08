@@ -1,6 +1,6 @@
 {
   "name": "test-todo",
-  "homepage": "https://yodenzel.github.io/test-todo",
+  "homepage": "https://yodenzel.github.io/todo-mobx",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
